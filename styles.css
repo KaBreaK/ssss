@@ -1,0 +1,126 @@
+img {
+    width: 80%;
+    height: auto;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+}
+
+.container {
+    text-align: center;
+    margin-top: 50px;
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 16px;
+    margin: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button.yes {
+    background-color: #4CAF50;
+    /* Zielony kolor */
+    color: white;
+}
+
+button.no {
+    background-color: #f44336;
+    /* Czerwony kolor */
+    color: white;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+.hidden {
+    display: none;
+}
+
+#gifContainer {
+    margin-top: 50px;
+    text-align: center;
+}
+
+#gifContainer img {
+    width: 100%;
+    max-width: 300px;
+    display: block;
+    margin: 0 auto;
+
+}
+
+#responseContainer {
+    margin-top: 50px;
+    text-align: center;
+}
+
+@keyframes appearance {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.container {
+    animation: appearance 0.5s ease forwards;
+}
+
+#zytnia {
+    width: 105%;
+    height: auto;
+}
+
+#container4 {
+    margin-top: -100px;
+}
+
+#wheelOfFortune {
+    display: inline-block;
+    position: relative;
+    overflow: hidden;
+}
+
+#wheel {
+    display: block;
+}
+
+#spin {
+    font: 1.5em/0 sans-serif;
+    user-select: none;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 30%;
+    height: 30%;
+    margin: -15%;
+    background: #fff;
+    color: #fff;
+    box-shadow: 0 0 0 8px currentColor, 0 0px 15px 5px rgba(0, 0, 0, 0.6);
+    border-radius: 50%;
+    transition: 0.8s;
+}
+
+#spin::after {
+    content: '';
+    position: absolute;
+    top: -17px;
+    border: 10px solid transparent;
+    border-bottom-color: currentColor;
+    border-top: none;
+}
